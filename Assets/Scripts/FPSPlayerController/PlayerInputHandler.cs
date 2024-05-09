@@ -62,7 +62,6 @@ public class PlayerInputHandler : MonoBehaviour
         RegisterInputActions();
 
         InputSystem.settings.defaultDeadzoneMin = leftStickDeadzoneValue;
-
     }
 
     void RegisterInputActions()
@@ -89,11 +88,6 @@ public class PlayerInputHandler : MonoBehaviour
         //Set CrouchTriggered to true when the crouch action is performed, and to false when the action is canceled.
         crouchAction.performed += context => CrouchTriggered = true;
         crouchAction.canceled += context => CrouchTriggered = false;
-
-
-
-
-
     }
 
     private void OnEnable()

@@ -46,18 +46,24 @@ public class PlayerController : MonoBehaviour
     private Vector3 currentMovement;
     private float verticalRotation;
 
-    private void Awake()
+    private void Start()
     {
         characterController = GetComponent<CharacterController>();
         mainCamera = Camera.main;
         inputHandler = PlayerInputHandler.Instance;
     }
 
-    private void Update()
+    
+
+
+
+private void Update()
     {
         HandleMovement();
         HandleRotation();
     }
+
+
 
     void HandleMovement()
     {
